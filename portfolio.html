@@ -5,7 +5,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="common.css" type="text/css">
     <link rel="stylesheet" href="portfolio.css" type="text/css">
     <title>portfolio</title>
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
@@ -31,11 +30,11 @@
   
     <br/><br/>
     <nav class="nav  bg-light">   
-        <div class="navl">       
-     <a href="portfolio.html">Home</a>
-     <a href="AboutUs.html">About us</a>
-     <a href="conatctUs.html">Contact us</a>
-     <a href="#">Blog</a>
+        <div class="navl">      
+     <button>Home</button> 
+     <button onclick="moveToAbout()">About Us</button> 
+    <button onclick="moveToContact()">Contact us</button> 
+    <button onclick="moveToContact()">Blog</button>    
      </div>    
       </nav>
     <div class="imgheader container">
@@ -85,20 +84,20 @@
       </div>
     </div>
 
-    <div class="card mb-3" style="max-width: 540px;margin-left:5%;">
-      <div class="row  no-gutters">
-        <div class="col-md-4">
-          <img src="./images/portfolio.jpg" style="height:100%;" class="card-img" alt="...">
-        </div>
-        <div class="col-md-8">
-          <div class="card-body">
-            <h5 class="card-title">Search Engine recognization</h5>
-            <p class="card-text">Make your portfolio website show up for just the right audience. Even if you’re a beginner you’ll look your best on Google, too.<br/><br/></p>
-          
+          <div class="card mb-3" style="max-width: 540px;margin-left: 2%;">
+            <div class="row no-gutters">
+              <div class="col-md-4">
+                <img src="./images/portfolio.jpeg"  style="height:100%;" class="card-img" alt="...">
+              </div>
+              <div class="col-md-8">
+                <div class="card-body">
+                  <h5 class="card-title">Search Engine recognization</h5>
+                  <p class="card-text">Make your portfolio website show up for just the right audience. Even if you’re a beginner you’ll look your best on Google, too.<br/><br/></p>
+                 
+                </div>
+              </div>
+            </div>
           </div>
-        </div>
-      </div>
-    </div>
     </div>
 
     <!--second row of cards-->
@@ -119,7 +118,7 @@
           </div>
         </div>
     
-        <div class="card mb-3" style="max-width: 540px;margin-left:5%;">
+        <div class="card mb-3" style="max-width: 540px;margin-left:2%;">
           <div class="row  no-gutters">
             <div class="col-md-4">
               <img src="./images/portfolio.jpg"  style="height:100%;" class="card-img" alt="...">
@@ -139,6 +138,114 @@
 
 
    </div>
+   <div class="aboutusheader" style="position: relative;">
+      <img src="./images/aboutusheader.jpeg" class="img">
+      <div class="headertext">
+      <h1 >Build Your Portfolio</h1>
+      <p style="position:relative;left:10%;">That make your presence online</p>
+      </div>
+    </div>
+ 
+
+    <div class="container section" >
+       
+        <div class="row">
+          <div class="col-lg-4" style="padding-top: 5%">
+                <p class="textaside">If you're a photographer, artist, designer, model, or creative, putting your work online is the best way to reach a larger audience. And you can do it in 4 easy steps.</p>
+          </div>
+          <div class="col-sm-2"></div>
+          <div class="col-lg-6">
+              <img src="./images/p.jpg" class="images">
+          </div>
+        </div>
+        <br>
+        <hr style="width:80%;position: relative;left: 10%;">
+        <br>
+        <div class="row">
+            <div class="col-lg-6" style="height: 230px">
+                <img src="./images/p1.png" class="images">
+            </div>
+            <div class="col-sm-2"></div>
+          
+          <div class="col-lg-4" style="padding-top: 5%">
+                <p class="textaside">Make a well design online portfolio and let more and more people know about your achievements.It's very good and healthy way to showcase your talent to others.</p>
+          </div>
+        </div>
+          <br>
+          <hr style="width:80%;position: relative;left: 10%;">
+          <br>
+          <div class="row">
+              <div class="col-lg-4" style="padding-top: 5%">
+                    <p class="textaside">You can not even make your own portfolio but you can visit and see other profiles and compare your work. It's good habit to keep a check on your progess as well as you can also let know about others.</p>
+              </div>
+              <div class="col-sm-2"></div>
+              <div class="col-lg-6" style="height: 230px">
+                  <img src="./images/others.png" class="images">
+              </div>
+            </div>
+            <br>
+            <hr style="width:80%;position: relative;left: 10%;">
+            <br>
+            <div class="row">
+                <div class="col-lg-6" style="height: 280px">
+                    <img src="./images/mailus.jpg" class="images">
+                </div>
+                <div class="col-sm-2"></div>
+              
+              <div class="col-lg-4" style="padding-top: 5%">
+                    <p class="textaside">If you have stuck with any problem no worries for it .Just reach us once or mail or phone and we will try our best resolve your problem or query.</p>
+              </div>
+            </div>
+        </div>
+  
+  
+
+
+   <div class="section">
+      <div style="text-align: center">
+          <h3 style="position:relative;left:2%;color: purple;">Having Any Query?</h3>
+          <p>No Worries we are here to help you.We are looking forward to  <br/>answer your questions</p>
+      </div>
+      <div class="container">
+          <div class="left">
+          <img src="./images/conatct.jpg" class="img">
+          </div>
+      <div class="right" >
+              <form style="width: 100%">
+                      <div class="form-group row">
+                              <label for="inputEmail3" class="col-sm-2 col-form-label">Name</label>
+                              <div class="col-sm-8">
+                                <input type="text" class="form-control" id="inputEmail3" placeholder="Enter Your Name">
+                              </div>
+                            </div>
+                      <div class="form-group row">
+                        <label for="inputEmail3" class="col-sm-2 col-form-label">Email</label>
+                        <div class="col-sm-8">
+                          <input type="email" class="form-control" id="inputEmail3" placeholder="Enter Your Email">
+                        </div>
+                      </div>
+                      <div class="form-group row">
+                        <label for="inputPassword3" class="col-sm-2 col-form-label">Message</label>
+                        <div class="col-sm-8">
+                            <textarea cols="38" rows="4" placeholder="bh">
+
+                            </textarea>
+                        </div>
+                      </div>
+                      <div class="form-group row">
+                        <div class="col-sm-10">
+                          <button type="submit" class="btn btn-primary" style="position: relative;left:22%;">Submit</button>
+                        </div>
+                      </div>
+                     
+                    </form>
+
+      </div>
+     </div>
+                
+  </div>
+
+  
     <footer class="page-footer font-small mdb-color pt-4">
       <div class="container text-center text-md-left">
         <div class="row text-center text-md-left mt-3 pb-3">

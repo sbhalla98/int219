@@ -61,4 +61,166 @@ div a:hover{
     text-align: center;
 }
 
+.left{
+    position: relative;
+    width:50%;
+    height: 20%;
+}
+.right{
+    position: relative;
+    left:10%;
+    padding: 2%;
+}
+.img{
+    height: 100%;
+    width: 100%;
+    float: left;
+    border-radius:5px;
+    
+
+}
+
+.main{
+    position: relative;
+    top:20%;
+    left:30%;
+}
+.section1{
+    height: 500px;
+    margin-bottom: 4%;
+  margin-top: 2%;
+}
+.section2{
+    margin-top: 1%;
+    margin-right: 0;
+}
+.aboutusheader{
+    background-color:rgba(150,100,350,0.9);
+    height:20em;
+    box-shadow:  0 2px 4px 0 #aaaaaa, 0 2px 2px 0 #bbbbbb;
+}
+.row1{
+    height: 50%;
+}
+.images{
+    height: 100%;
+    width: 100%;
+    box-shadow:  0 6px 8px 0 #aaaaaa, 0 4px 20px 0 #bbbbbb;
+}
+.textaside{
+    font-weight: bold;
+    font-size: 15px;
+}
+.img{
+    height: 100%;
+    width: 100%;
+    position: relative;
+}
+.headertext{
+    position: absolute;
+    top:35%;
+    left: 38%;
+    color:purple;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: bold;
+}
+
+.header{
+    height: 70px;
+    width: 100%;
+    background-color: rgb(142, 76, 246);
+    position: fixed;
+    z-index: 6;
+    color: white;
+}
+html,body{
+    overflow-x: hidden;
+    margin: 0 !important;
+}
+.heading{
+    position: relative;
+    left:2%;
+    font-family:fantasy;
+    font-size: 25px;
+    float: left;
+}
+
+.section{
+    margin-top:5%;
+    margin-bottom: 10%;
+}
+
+.cw:hover{
+    color: black;
+}
+
+.links{
+    float: right;
+    position: relative;
+    right: 5%;
+    top:30%;
+    font-family: fantasy;
+    font-size: 20px;
+    margin-left: 10%; 
+}
+div > a{
+    color: white;
+
+}
+div a:hover{
+    text-decoration: none;
+}
+.navl > a{
+    margin-left: 2%;
+    color: black;
+    display: inline-block;
+    height: 95%;
+    padding:1%;
+    padding-bottom: 0%;
+}
+.nav{
+    margin-top:1%;
+    z-index: -2;
+    height: 55px;
+    width: 100%;
+}
+.cw{
+    color: white;
+}
+li{
+    position: relative;
+    top:50%;
+    display: inline;
+    text-decoration: none;
+}
+.navl{
+    position: relative;
+    top:8%;
+    left:2%;
+    font-size: 18px;
+    z-index: 0;
+    width: 100%;
+}
+.navl>a:hover{
+    color: white;
+    background-color: black;
+    text-decoration: none;
+}
+  footer{
+    width:100%;
+    background-color: rgb(142, 76, 246);
+    margin-top:5%;
+    box-shadow: 0 4px 8px 0 grey, 0 6px 20px 0 grey;
+    color: white;
+}
+
+@media screen and (max-width: 600px) {
+    .navl{
+        padding-top: 3%;
+      }
+      .nav{
+          padding-top: 0.5%;
+      }
+  }
+  
   

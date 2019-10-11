@@ -19,3 +19,9 @@ function slideshow(){
         }
     }, 3000);
 }
+function moveToContact(){
+    window.scrollTo(0, 3300);
+}
+function moveToAbout(){
+    window.scrollTo(0, 1800);
+}
