@@ -8,9 +8,9 @@ function(event){
     $(target).animate({"height":"80px","width":"90px","right":"5px"},"fast");
 })
 var arr = ['portfolio.jpg','portfolio.jpeg','prtofolio.png','prtoflio.jpg','portfolio1.jpg'];
-var imgname = document.getElementsByClassName("mainimg")[0].getAttribute('src');
 function slideshow(){
     var i=1;
+    document.getElementsByClassName("mainimg")[0].setAttribute('src',arr[i]);
     slideshowid = setInterval(() => {
         document.getElementsByClassName("mainimg")[0].setAttribute('src',arr[i]);
         i++;

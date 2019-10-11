@@ -3,3 +3,42 @@
     top:20%;
     left:30%;
 }
+.section1{
+    height: 500px;
+    margin-bottom: 4%;
+  margin-top: 2%;
+}
+.section2{
+    margin-top: 1%;
+    margin-right: 0;
+}
+.aboutusheader{
+    background-color:rgba(150,100,350,0.9);
+    height:20em;
+    box-shadow:  0 2px 4px 0 #aaaaaa, 0 2px 2px 0 #bbbbbb;
+}
+.row{
+    height: 50%;
+}
+.images{
+    height: 100%;
+    width: 100%;
+    box-shadow:  0 6px 8px 0 #aaaaaa, 0 4px 20px 0 #bbbbbb;
+}
+.textaside{
+    font-weight: bold;
+    font-size: 15px;
+}
+.img{
+    height: 100%;
+    width: 100%;
+    position: relative;
+}
+.headertext{
+    position: absolute;
+    top:35%;
+    left: 38%;
+    color:purple;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: bold;
+}
