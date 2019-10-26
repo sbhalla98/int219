@@ -23,7 +23,7 @@
         <div>Portfolio</div>
         </div>
         <div class="links">
-            <a href="login.html">Login</a>
+            <a href="portfoliopage.html">Login</a>
             &nbsp;&nbsp;<a href="signup.html">SignUp</a>
         </div>
     </header>
@@ -34,7 +34,7 @@
      <button>Home</button> 
      <button onclick="moveToAbout()">About Us</button> 
     <button onclick="moveToContact()">Contact us</button> 
-    <button onclick="moveToContact()">Blog</button>    
+    <button onclick="moveToBlog()">Blog</button>    
      </div>    
       </nav>
     <div class="imgheader container">
@@ -138,7 +138,8 @@
 
 
    </div>
-   <div class="aboutusheader" style="position: relative;">
+   <!-- About us page coding -->
+   <div class="aboutusheader" id="aboutus" style="position: relative;">
       <img src="./images/aboutusheader.jpeg" class="img">
       <div class="headertext">
       <h1 >Build Your Portfolio</h1>
@@ -200,8 +201,8 @@
   
   
 
-
-   <div class="section">
+          <!-- Contact us page coding -->
+   <div class="section" id="contact" style="background-color: rgba(255, 204, 255,0.4);padding:3%;">
       <div style="text-align: center">
           <h3 style="position:relative;left:2%;color: purple;">Having Any Query?</h3>
           <p>No Worries we are here to help you.We are looking forward to  <br/>answer your questions</p>
@@ -241,9 +242,19 @@
                     </form>
 
       </div>
-     </div>
-                
+    </div>         
   </div>
+<div class="container" id="Blog">
+  <h5>Comment about us!!!</h5>
+  <form action="/action_page.php" target="_blank">
+    <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Message" required name="Message"></p>
+    <p>
+      <button class="w3-button w3-padding-large" style="background-color: rgba(142, 76, 246,0.9);color: white;border-radius: 2%;" type="submit">
+        <i class="fa fa-paper-plane"></i> SEND MESSAGE
+      </button>
+    </p>
+  </form>
+</div>
 
   
     <footer class="page-footer font-small mdb-color pt-4">

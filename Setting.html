@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Portfolio</title>
+        <link href="css/bootstrap.css" rel="stylesheet">
+        <link href="css/style.css" rel="stylesheet">
+        <script src="js/jquery.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>   
+      </head>
+
+     <body style="background-image:url('img/settingbg.jpg')">
+        <div class="navbar navbar-inverse navbar-fixed-top" style="height:66px;  background-color: rgba(219, 42, 42, 0.904)">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>                        
+                    </button>
+                    <a class="navbar-brand" href="home.html" id="link">Build Your<br>Portfolio</a>
+                </div>
+                <div class="collapse navbar-collapse" id="myNavbar">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a href = "portfolio.html" id="link"><span class = "glyphicon glyphicon-user"></span> Profile </a></li>
+                        <li><a href = "home.html" id="link"><span class = "glyphicon glyphicon-home"></span> Home</a></li>
+                        <li class="activate"><a href = "#" id="link"><span class = "glyphicon glyphicon-cog"></span> Setting</a></li>
+                        <li><a href = "portfolio.html" id="link"><span class = "glyphicon glyphicon-log-out"></span> Logout</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="container" id="content">
+            <div class="jumbotron home-spacer" id="products-jumbotron" style="background-image:url('img/jumbobg.jpg');">
+                <h2 style="color:black;"><i>Welcome to the settings!</i></h2>
+                <p style="color:black;"><i>Here you can change the basic settings of your portfolio account which are mentioned below.</i></p>
+
+            </div>
+            <hr>
+
+            <div class="row text-center" id="settingthumb">
+                    <div class="col-md-2 col-sm-4 home-feature" style="margin-right:50px; margin-left:110px">
+                        <div class="thumbnail">
+                            <img src="img/account.png" alt="" class="img-rounded">
+                            <div class="caption">
+                                <h3>Account</h3>
+                                <p><button type="button" class="btn btn-success btn-block" data-toggle="modal" data-target="#account">Edit</button></p>
+                                        <!-- Modal -->
+                                        <div class="modal fade" id="account">
+                                        <div class="modal-dialog">
+    
+                                        <!-- Modal content-->
+                                        <div class="modal-content">
+                                        <div class="modal-header">
+                                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                        <h2 class="modal-title" style="color:rgba(219, 42, 42, 0.904)">Account</h2>
+                                        </div>
+                                        <div class="modal-body">
+                                            <h4 style="background-color: yellowgreen; height:24px;"><i>Change the basic settings of account:</i></h4>
+                                                <h4 style="font-size: 17px;">User Name</h4>
+                                                <input type="text"  id="t1" name="t1" placeholder="Enter Name" width="20" maxlength="20">
+                                          
+                                                <h4 style="font-size: 17px;">Password</h4>
+                                                <input type="password" id="t2" placeholder="Enter password" required>
+                                          
+                                                <h4 style="font-size: 17px;">Confirm Password</h4>
+                                                <input type="password" id="t22" placeholder="Repeat password" required>
+
+                                                <h4 style="font-size: 17px;">Email</h4>
+                                                <input type="text" id="t3" name="t1" placeholder="Enter Email" width="40" maxlength="40" required>
+
+                                                <h4 style="font-size: 17px;">Phone Number</h4>
+                                                <input type="text" id="t4" name="t1" placeholder="Enter phone number" width="40" maxlength="40" required>
+                                          
+                                                <p><input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> By changing in account you agree to our <a href="#" style="color:dodgerblue">Terms & Conditions</a>.</p>
+                                                  <script>
+                                                    function sub1(){
+                                                      {
+                                                      if(document.getElementById("t1").value!="" || document.getElementById("t2").value!="" || document.getElementById("t22").value!="" || document.getElementById("t3").value!="" || document.getElementById("t4").value!="")
+                                                        {
+                                                        var a=document.getElementById("t4").value;
+                                                        var b=document.getElementById("t3").value;
+                                                        var atPos= parseInt(b.indexOf('@'));
+                                                        var dotPos = parseInt(b.lastIndexOf('.'));
+                                                        var c=document.getElementById("t2").value;
+                                                        var d=document.getElementById("t22").value;
+                                                        if(isNaN(a) || a.length > 10 || a.length < 10|| atPos<1 || (dotPos-atPos)<2 || c!=d)
+                                                        {
+                                                          var fname=document.getElementById("t1").value;
+                                                          if(fname=="")
+                                                          {
+                                                            alert("Name should not be empty.")
+                                                          }
+
+                                                          var c=document.getElementById("t2").value;
+                                                          var d=document.getElementById("t22").value;
+                                                          if(c!=d)
+                                                          {
+                                                          alert("Password does not match.");
+                                                          }
+                                                          
+
+                                                          var b=document.getElementById("t3").value;
+                                                          var atPos= parseInt(b.indexOf('@'));
+                                                          var dotPos = parseInt(b.lastIndexOf('.'));
+                                                          if( atPos<1 || (dotPos-atPos)<2)
+                                                          {
+                                                          alert("Invalid E-Mail ID.");
+                                                          }
+
+                                                          var a=document.getElementById("t4").value;
+                                                          if(isNaN(a) || a.length > 10 || a.length < 10)
+                                                          {
+                                                            alert("Invalid Phone Number.");
+                                                          } 
+                                                          }
+
+                                                          else
+                                                          {
+                                                          alert("Your Settings have successfully changed.")
+                                                          }
+
+                                                          }
+
+                                                          else if(document.getElementById("t1").value=="" && document.getElementById("t2").value=="" && document.getElementById("t22").value=="" && document.getElementById("t3").value=="" && document.getElementById("t4").value=="")
+                                                          alert("All fields are empty, settings didn't change, you can try again if you want. ");
+                                                          }
+                                                      }
+                                                        
+                                                  </script>
+                                          </div>
+                                        <div class="modal-footer">
+                                        <center>
+                                        <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                                        <button type="button" class="btn btn-success" data-dismiss="modal" onclick="sub1()">Submit</button>
+                                      </center>
+                                        </div>
+                                        </div>
+      
+                                          </div>
+                                        </div>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="col-md-2 col-sm-4 home-feature" style="margin-right:50px">
+                        <div class="thumbnail">
+                            <img src="img/privacy.jpg" alt="" class="img-rounded">
+                            <div class="caption">
+                                <h3>Privacy</h3>
+                                <p><button type="button" class="btn btn-success btn-block" data-toggle="modal" data-target="#privacy">Edit</button></p>
+                                              <!-- Modal -->
+                                              <div class="modal fade" id="privacy" role="dialog">
+                                              <div class="modal-dialog">
+                                      
+                                              <!-- Modal content-->
+                                        <div class="modal-content">
+                                          <div class="modal-header">
+                                          <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                          <h2 class="modal-title" style="color:rgba(219, 42, 42, 0.904)">Privacy</h2>
+                                          </div>
+                                              <div class="modal-body">
+                                                  <h4 style="background-color: yellowgreen; height:24px;"><i>Privacy Settings and Tools</i></h4>
+                                                  <hr>
+                                                  <p style="font-size: 15px;">Who can see your future posts?<br>
+                                                  <select name="dropdown">
+                                                  <option value="public" selected>Public</option>
+                                                  <option value="friends">Friends</option>
+                                                  <option value="friends of friends">Friends of friends</option>
+                                                  <option value="only me">Only me</option>
+                                                  </select>
+                                                  </p>
+                                                  <hr>
+                                                  
+                                                  <p style="font-size: 15px;">Who can send you friend requests?<br>
+                                                  <select name="dropdown">
+                                                  <option value="public" selected>Public</option>
+                                                  <option value="friends">Friends</option>
+                                                  <option value="friends of friends">Friends of friends</option>
+                                                  <option value="only me">Only me</option>
+                                                  </select>
+                                                  </p>
+                                                  <hr>
+                                                  
+                                                  <p style="font-size: 15px;">Who can see your friend list?<br>
+                                                  <select name="dropdown">
+                                                  <option value="public" selected>Public</option>
+                                                  <option value="friends">Friends</option>
+                                                  <option value="friends of friends">Friends of friends</option>
+                                                  <option value="only me">Only me</option>
+                                                  </select>
+                                                  </p>
+                                                  <hr>
+                                                  
+                                                  <p style="font-size: 15px;">Who can look you up using the phone number you provided?<br>
+                                                  <select name="dropdown">
+                                                  <option value="public" selected>Public</option>
+                                                  <option value="friends">Friends</option>
+                                                  <option value="friends of friends">Friends of friends</option>
+                                                  <option value="only me">Only me</option>
+                                                  </select>
+                                                  </p>
+
+                                                  <form action="Script URL" method="POST">
+                                                  <script>
+                                                  function sub2()
+                                                  {
+                                                  alert("Your Privacy settings have successfully changed")
+                                                  }
+                                                  </script>
+                                                  </form>
+
+                                              </div>
+                                              <div class="modal-footer">
+                                                <center>
+                                                <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                                                <button type="button" class="btn btn-success" data-dismiss="modal" onclick="sub2()">Submit</button>
+                                              </center>
+                                                </div>
+                                                </div>
+              
+                                                  </div>
+                                                </div>
+                                    </div>
+                                </div>
+                            </div>
+    
+                    <div class="col-md-2 col-sm-4 home-feature" style="margin-right:50px">
+                        <div class="thumbnail">
+                            <img src="img/general.png" alt="" class="img-rounded">
+                            <div class="caption">
+                                <h3>General</h3>
+                                <p><button type="button" role="button" class="btn btn-success btn-block" data-toggle="modal" data-target="#general">Edit</button></p>
+                            
+                                              <!-- Modal -->
+                                              <div class="modal fade" id="general" role="dialog">
+                                              <div class="modal-dialog">
+                                      
+                                              <!-- Modal content-->
+                                        <div class="modal-content">
+                                          <div class="modal-header">
+                                          <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                          <h2 class="modal-title" style="color:rgba(219, 42, 42, 0.904)">General</h2>
+                                          </div>
+                                              <div class="modal-body">
+                                                <h4 style="background-color: yellowgreen; height:24px;"><i>Normal Settings of your account:</i></h4>
+                                                <form action="Script URL" method="POST">
+                                                  <hr>
+                                                <p style="font-size: 15px;">Languages:</p>English<input type="radio" value="English" checked>     Hindi<input type="radio" value="Hindi">    Punjabi<input type="radio" value="Punjabi">          
+                                                <hr>
+                                                <p style="font-size: 15px;">View:</p> Small<input type="radio" value="Small">     Medium <input type="radio" value="Medium" checked>    Large<input type="radio" value="Large">          
+                                               <hr>
+                                                <p style="font-size: 15px;">Play Videos automatically when connected to:        </p> Wifi<input type="radio"  value="Wifi">       Mobile Network<input type="radio" value="Mobile Network" checked>            
+                                               <hr>
+                                                <p style="font-size: 15px;">Image Quality:</p>Low<input type="radio" value="Low">   Medium<input type="radio" value="Medium" checked>   High<input type="radio" value="High">           
+                                                
+                                                </form>
+                                               
+                                                <script>
+                                                function sub3()
+                                                {
+                                                alert("Your General settings have successfully changed!!!")
+                                                }
+                                                </script>
+                                                </form>
+
+                                              </div>
+                                              <div class="modal-footer">
+                                                <center>
+                                                <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                                                <button type="button" class="btn btn-success" data-dismiss="modal" onclick="sub3()">Submit</button>
+                                              </center>
+                                                </div>
+                                                </div>
+              
+                                                  </div>
+                                                </div>
+                                    </div>
+                                </div>
+                            </div>
+    
+                    <div class="col-md-2 col-sm-4 home-feature" style="margin-right:50px">
+                        <div class="thumbnail">
+                            <img src="img/notification.jpg" alt="" class="img-rounded">
+                            <div class="caption">
+                                <h3>Notification</h3>
+                                <p><button type="button" role="button" class="btn btn-success btn-block" data-toggle="modal" data-target="#notification">Edit</button></p>
+                                                <!-- Modal -->
+                                                <div class="modal fade" id="notification" role="dialog">
+                                                <div class="modal-dialog">
+                                                                    
+                                                <!-- Modal content-->
+                                        <div class="modal-content">
+                                          <div class="modal-header">
+                                          <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                          <h2 class="modal-title" style="color:rgba(219, 42, 42, 0.904)">Notification</h2>
+                                          </div>
+                                              <div class="modal-body">
+                                              <h4 style="background-color: yellowgreen; height:24px;"><i>How would you like to get your Notifications:</i></h4>
+                                              <form action="script url" method="POST">
+                                              <script>
+                                              function number()
+                                              {
+                                              var a=prompt("Enter your 10 digit Phone Number");
+                                              confirm("Click Ok to confirm your phone number: "+a);
+                                              if(isNaN(a) || a.length > 10 || a.length < 10)
+                                              {
+                                              alert("Please check the number.");
+                                              }
+                                              else
+                                              {
+                                              alert("Your Notifications setting have changed to Phone Number");
+                                              }
+                                              }
+                                              </script>
+                                              <p style="font-size: 15px;">Through Phone Number <input type="radio" value="number" onclick="number()"></p>
+                                              <script>
+                                                function mail()
+                                              {
+                                              var a=prompt("Enter your E-Mail ID");
+                                              confirm("Click Ok to confirm your ID: "+a);
+                                              var atPos= parseInt(a.indexOf('@'));
+                                              var dotPos = parseInt(a.lastIndexOf('.'));
+                                              if( atPos<1 || (dotPos-atPos)<2)
+                                              {
+                                              alert("Enter correct email.");
+                                              }
+                                              else
+                                              {
+                                              alert("Your notifications setting have changed to E-mail ID");
+                                              }
+                                            }
+                                              </script>
+                                              <p style="font-size: 15px;">Through E-Mail ID <input type="radio" value="e-mail" onclick="mail()"></p>
+                                            <script>
+                                             function sub4(){
+                                                alert("Notification setting changed successfully!!!");
+                                              }
+                                            </script>
+                                            </form>
+                                              </div>
+                                              <div class="modal-footer">
+                                                <center>
+                                                <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                                                <button type="button" class="btn btn-success" data-dismiss="modal" onclick="sub4()">Submit</button>
+                                              </center>
+                                                </div>
+                                                </div>
+              
+                                                  </div>
+                                                </div>
+                                    </div>
+                                </div>
+                            </div>
+                            </div>
+                          </div>
+                    
+         <footer style="background-color: rgba(219, 42, 42, 0.904)">
+            <div class="container">
+                <div class="container text-center text-md-left">
+                <div class="row text-center text-md-left mt-3 pb-3">
+                <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+                <h6 class="text-uppercase mb-4 font-weight-bold">What we Provide?</h6>
+                <p>Here you can use make your profolio and also vistis other portfolio to compare your status with others.Go Ahead!! All the best :)</p>
+              </div>
+              <div class="col-md-3 col-lg-4 col-xl-2 mx-auto mt-3">
+                <h6 class="text-uppercase mb-4 font-weight-bold">Technologies used</h6>
+                <p>
+                  <a href="#!" class="cw">CSS</a>
+                </p>
+                <p>
+                  <a href="#!" class="cw">Javascript</a>
+                </p>
+                <p>
+                  <a href="#!" class="cw">Jquery</a>
+                </p>
+                <p>
+                  <a href="#!" class="cw">Bootstrap</a>
+                </p>
+              </div>
+              <div class="col-md-6 col-lg-3 col-xl-3 mx-auto mt-3">
+                <h6 class="text-uppercase mb-4 font-weight-bold">Contact</h6>
+                <p>
+                  <i class="fas fa-envelope mr-3"></i> Devesh.chaudhary.30994@gmail</p>
+                <p>
+                  <i class="fas fa-user mr-3"></i> Devesh Chaudhary</p>
+                <p>
+                  <i class="fas fa-phone mr-3"></i> 9729972895</p>
+              </div>
+            </div>
+      
+            <hr>
+        
+            <div class="row d-flex align-items-center">
+              <div class="col-md-7 col-lg-8">
+              </div>
+              <div class="col-md-5 col-lg-4 ml-lg-0">
+        
+                <!-- Social buttons -->
+                <div class="text-center text-md-right">
+                  <ul class="list-unstyled list-inline">
+                    <li class="list-inline-item">
+                      <a class="btn-floating btn-sm rgba-white-slight mx-1">
+                        <i class="fab fa-facebook-f cw"></i>
+                      </a>
+                    </li>
+                    <li class="list-inline-item">
+                      <a class="btn-floating btn-sm rgba-white-slight mx-1">
+                        <i class="fab fa-twitter cw"></i>
+                      </a>
+                    </li>
+                    <li class="list-inline-item">
+                      <a class="btn-floating btn-sm rgba-white-slight mx-1">
+                        <i class="fab fa-google-plus-g cw"></i>
+                      </a>
+                    </li>
+                    <li class="list-inline-item">
+                      <a class="btn-floating btn-sm rgba-white-slight mx-1">
+                        <i class="fab fa-linkedin-in cw"></i>
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+            </div>
+        </footer>
+    </body>
+</html>

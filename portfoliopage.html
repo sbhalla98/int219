@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>portfolio page</title>
+    <script src="angular.js"></script>
+    <script src="angularportfolio.js"></script>
+    <link rel="stylesheet" href="portfolio.css" type="text/css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Roboto'>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+<style>
+html,body,h1,h4,h6 {font-family: "Roboto", sans-serif; font-size: 15px;}
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  
+}
+.card{
+  width: 30%;
+  margin-left:2%
+}
+.w3-teal{
+ 
+  color: purple;
+}
+.individualportfolio{
+  display: none;
+}
+.allportfolio{
+  display: block;
+}
+
+
+</style>
+</head>
+<body class="w3-light-grey" ng-app="myModule">
+    <div ng-controller="myController">
+    <header class="header w3-teal">
+        <div class="heading">
+        <div>Build your</div>
+        <div>Portfolio</div>
+        </div>
+        <div class="links">
+            <a href = "portfoliopage.html" id="link"><span class = "glyphicon glyphicon-user"></span><span>Profile</span>  </a>
+            &nbsp; &nbsp;<a href = "portfoliopage.html" id="link"><span class = "glyphicon glyphicon-home"></span> Home</a>
+            &nbsp; &nbsp;<a href = "Setting.html" id="link"><span class = "glyphicon glyphicon-cog"></span> Setting</a>
+            &nbsp; &nbsp;<a href = "portfolio.html" id="link"><span class = "glyphicon glyphicon-log-out"></span> Logout</a>
+        </div>
+    </header>
+    <br>
+    <div class="allportfolio container section" style="margin-top: 8%;">          
+  <!-- First Photo Grid-->
+  <div class="w3-row-padding">
+   
+      <div ng-repeat="i in allinfo">
+        <div class="w3-third w3-container w3-margin-bottom card" ng-click="display($event)" id="{{i.name}}">
+          <img src="sonali.jpeg" alt="Norway" style="width:100%">
+          <div class="w3-container w3-white">
+            <h5 class="w3-center"><b>{{i.name}}</b></h5>
+            <h4 class="w3-center">{{i.profession}}</h4>
+          </div>
+        </div>
+      </div>
+    
+<!--       
+      Second Photo Grid -->
+      
+          <div ng-repeat="i in allinfo">
+        <div class="w3-third w3-container w3-margin-bottom card" ng-click="display($event)" id="{{i.name}}">
+          <img src="three.jpeg" alt="Norway" style="width:100%">
+          <div class="w3-container w3-white">
+            <h5 class="w3-center"><b>{{i.name}}</b></h5>
+            <h4 class="w3-center">{{i.profession}}</h4>
+          </div>
+        </div>
+        </div>
+      </div>
+     
+    
+      <!-- Pagination -->
+      <div class="w3-center w3-padding-32" style="margin-top:1% ;">
+        <div class="w3-bar">
+          <a href="#" class="w3-bar-item w3-button w3-hover-black">«</a>
+          <a href="#" class="w3-bar-item w3-black w3-button">1</a>
+          <a href="#" class="w3-bar-item w3-button w3-hover-black">2</a>
+          <a href="#" class="w3-bar-item w3-button w3-hover-black">3</a>
+          <a href="#" class="w3-bar-item w3-button w3-hover-black">4</a>
+          <a href="#" class="w3-bar-item w3-button w3-hover-black">»</a>
+        </div>
+      </div>
+      </div>
+   
+    <div class="individualportfolio" style="margin-top: 5%;" >
+    <div id="main">
+    <!-- Page Container -->
+    <div ng-repeat="i in info" ng-if="i.name==id" >
+    <div class="w3-content w3-margin-top" style="max-width:1400px;">
+  
+      <!-- The Grid -->
+      <div class="w3-row-padding">
+      
+        <!-- Left Column -->
+        <div class="w3-third">
+        
+          <div class="w3-white w3-text-grey w3-card-4">
+            <div class="w3-display-container">
+              <img src="sonali.jpeg" style="width:100%;height: 40%;" alt="Avatar">
+              <div class="w3-display-bottomleft w3-container w3-text-black">
+                <h3 style="color: white;">{{i.name}}</h3>
+              </div>
+            </div>
+            <div class="w3-container">
+              <p><i class="fa fa-briefcase fa-fw w3-margin-right w3-large w3-text-teal"></i>{{i.profession}}</p>
+              <p><i class="fa fa-home fa-fw w3-margin-right w3-large w3-text-teal"></i>{{i.place}}</p>
+              <p><i class="fa fa-envelope fa-fw w3-margin-right w3-large w3-text-teal"></i>{{i.email}}</p>
+              <p><i class="fa fa-phone fa-fw w3-margin-right w3-large w3-text-teal"></i>{{i.phoneno}}</p>
+              <hr>
+              <p class="w3-large"><b><i class="fa fa-asterisk fa-fw w3-margin-right w3-text-teal"></i>Skills</b></p>
+                <div ng-repeat="y in i.Skills">
+                    <p>{{y}}</p>
+                    <div class="w3-light-grey w3-round-xlarge w3-small">
+                    <div class="w3-container w3-center w3-round-xlarge w3-teal" style="width:90%">90%</div>
+                    </div>
+                </div>
+                 <br>
+    
+              <p class="w3-large w3-text-theme"><b><i class="fa fa-globe fa-fw w3-margin-right w3-text-teal"></i>Languages</b></p>
+              <div ng-repeat="y in i.Languages">
+              <p>{{y}}</p>
+              <div class="w3-light-grey w3-round-xlarge">
+                <div class="w3-round-xlarge w3-teal w3-center" style="height:24px;width:90%">90%</div>
+              </div>
+            </div>
+              <br>
+            </div>
+          </div><br>
+    
+        <!-- End Left Column -->
+        </div>
+    
+        <!-- Right Column -->
+        <div class="w3-twothird">
+        
+          <div class="w3-container w3-card w3-white w3-margin-bottom">
+            <h2 class="w3-text-grey w3-padding-16"><i class="fa fa-suitcase fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>PROJECTS</h2>
+
+            <div ng-repeat="y in i.Projects">
+            <div class="w3-container">
+              <h5 class="w3-opacity"><b>{{y.field}}</b></h5>
+              <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>{{y.timeStart}} - <span class="w3-tag w3-teal w3-round">{{y.timeEnd}}</span></h6>
+              <p>{{y.descrition}}</p>
+              <hr>
+            </div>
+        </div>
+          </div>
+          <div class="w3-container w3-card w3-white">
+                <h2 class="w3-text-grey w3-padding-16"><i class="fa fa-certificate fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>Education</h2>
+                <div ng-repeat="y in i.Education">
+                   
+            <div class="w3-container">
+              <h5 class="w3-opacity"><b>{{y.school}}</b></h5>
+              <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>{{y.time}}</h6>
+              <p>{{y.class}}</p>
+              <hr>
+            </div>
+            </div>
+          </div>
+    
+        <!-- End Right Column -->
+        </div>
+        
+      <!-- End Grid -->
+      </div>
+      <div class="w3-padding-14" style="background-color: white;width: 100%;padding: 1% 3% 1% 3%;background-color: rgba(0,0,0,0);margin-top:2%">
+      <p>Lets get in touch. Send me a message:</p>
+      <form action="/action_page.php" target="_blank">
+        <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Name" required name="Name"></p>
+        <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Email" required name="Email"></p>
+        <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Subject" required name="Subject"></p>
+        <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Message" required name="Message"></p>
+        <p>
+          <button class="w3-button w3-teal w3-padding-large" type="submit">
+            <i class="fa fa-paper-plane"></i> SEND MESSAGE
+          </button>
+        </p>
+      </form>
+
+      <button style="position: relative;right: 0;" class="w3-button w3-teal w3-padding-large" type="submit">
+        <i class="fa fa-download"></i> DOWNLOAD RESUME
+      </button>
+    </div>
+      
+      <!-- End Page Container -->
+    </div>
+    <footer class="w3-container w3-teal w3-center w3-margin-top" style="padding: 1% 0 1% 0;">
+      <p>Find me on social media.</p>
+      <i class="fa fa-facebook-official w3-hover-opacity"></i>
+      <i class="fa fa-instagram w3-hover-opacity"></i>
+      <i class="fa fa-snapchat w3-hover-opacity"></i>
+      <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+      <i class="fa fa-twitter w3-hover-opacity"></i>
+      <i class="fa fa-linkedin w3-hover-opacity"></i>
+    </footer>
+    </div>
+    </div>
+    </div>
+    </div>
+
+    <script src="jq2.js"></script>
+    <script>
+    </script>
+    </body>
+</html>

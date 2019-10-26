@@ -170,13 +170,14 @@ div > a{
 div a:hover{
     text-decoration: none;
 }
-.navl > a{
+.navl > button{
     margin-left: 2%;
     color: black;
     display: inline-block;
-    height: 95%;
-    padding:1%;
+    height: 92%;
     padding-bottom: 0%;
+    border: none;
+    background-color: rgba(236, 236, 236,0);
 }
 .nav{
     margin-top:1%;
@@ -201,10 +202,11 @@ li{
     z-index: 0;
     width: 100%;
 }
-.navl>a:hover{
+.navl>button:hover{
     color: white;
     background-color: black;
     text-decoration: none;
+    border: none;
 }
   footer{
     width:100%;

@@ -20,8 +20,11 @@ function slideshow(){
     }, 3000);
 }
 function moveToContact(){
-    window.scrollTo(0, 3300);
+    $('html,body').animate({scrollTop:($('#contact').offset().top)},500);
 }
 function moveToAbout(){
-    window.scrollTo(0, 1800);
+    $('html,body').animate({scrollTop:($('#aboutus').offset().top)},500);
+}
+function moveToBlog(){
+    $('html,body').animate({scrollTop:($('#Blog').offset().top)},500);
 }
