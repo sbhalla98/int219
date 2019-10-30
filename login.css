@@ -1,0 +1,226 @@
+
+.heading{
+    position: relative;
+    left:2%;
+    font-family:fantasy;
+    font-size: 25px;
+    float: left;
+}
+.homei{
+    border-radius: 50%;
+    height: 100%;
+    width: 100%;
+    box-shadow: 0 4px 8px 0 #aaaaaa, 0 6px 20px 0 #bbbbbb;
+    position: absolute;
+    z-index: -1;
+}
+
+div  a{
+    color: white;
+}
+div a:hover{
+    text-decoration: none;
+}
+.text{
+    position: relative;
+    top:110%;
+    left: 40%;
+    font-size: 20px;
+    font-family:'Satisfy', cursive;
+    position: relative;
+    bottom: 4px;
+}
+.header{
+    height: 70px;
+    width: 100%;
+    background-color: rgb(142, 76, 246);
+    position: fixed;
+    z-index: 6;
+    color: white;
+}
+html,body{
+    overflow-x: hidden;
+    margin: 0 !important;
+}
+
+
+.cw:hover{
+    color: black;
+}
+
+.links{
+    float: right;
+    position: relative;
+    right: 5%;
+    top:30%;
+    font-family: fantasy;
+    font-size: 20px;
+    margin-left: 10%; 
+}
+
+.navl > button{
+    margin-left: 2%;
+    color: black;
+    display: inline-block;
+    height: 92%;
+    padding-bottom: 0%;
+    border: none;
+    background-color: rgba(236, 236, 236,0);
+}
+.nav{
+    margin-top:1%;
+    z-index: -2;
+    height: 55px;
+    width: 100%;
+}
+.cw{
+    color: white;
+}
+.navl{
+    position: relative;
+    top:8%;
+    left:2%;
+    font-size: 18px;
+    z-index: 0;
+    width: 100%;
+}
+.navl>button:hover{
+    color: white;
+    background-color: black;
+    text-decoration: none;
+    border: none;
+}
+  footer{
+    width:100%;
+    background-color: rgb(142, 76, 246);
+    margin-top:5%;
+    box-shadow: 0 4px 8px 0 grey, 0 6px 20px 0 grey;
+    color: white;
+}
+
+@media screen and (max-width: 600px) {
+    .navl{
+        padding-top: 3%;
+      }
+      .nav{
+          padding-top: 0.5%;
+      }
+  }
+  
+  
+  /* sharif */
+  @import url(https://fonts.googleapis.com/css?family=Roboto:300);
+
+.login-page {
+  width: 360px;
+  padding: 8% 0 0;
+  margin: auto;
+}
+.form {
+  border-radius: 10px;
+  /* position: relative; */
+  z-index: 1;
+  background: #FFFFFF;
+  max-width: 360px;
+  margin: 0 auto 100px;
+  padding: 45px;
+  text-align: center;
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+}
+.form input {
+  border-radius: 50px;
+  font-family: "Roboto", 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  outline: 0;
+  background: #f2f2f2;
+  width: 100%;
+  border: 0;
+  margin: 0 0 15px;
+  padding: 15px;
+  box-sizing: border-box;
+  font-size: 14px;
+}
+.form button {
+  font-family: "Roboto", 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  text-transform: uppercase;
+  border-radius: 50px;
+  outline: 0;
+  background-color: rgba(127, 77, 207, 0.7);
+  width: 100%;
+  border: 0;
+  padding: 15px;
+  color: #FFFFFF;
+  font-size: 14px;
+ 
+  cursor: pointer;
+
+}
+.form button:hover,.form button:active,.form button:focus {
+  background-color: rgb(142, 76, 246);
+  opacity: 10px;
+}
+.form .message .message1 {
+  margin: 15px 0 0;
+  color: #b3b3b3;
+  font-size: 12px;
+}
+.message1{
+  cursor: pointer;
+    text-decoration: none;
+    margin-right: 100px;
+    
+}
+.form .message a {
+  color: rgb(142, 76, 246);
+  text-decoration: none;
+}
+.form .register-form {
+  display: none;
+}
+.container {
+  position: relative;
+  z-index: 1;
+  max-width: 300px;
+  margin: 0 auto;
+}
+.container:before, .container:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+.container .info {
+  margin: 50px auto;
+  text-align: center;
+}
+.container .info h1 {
+  margin: 0 0 15px;
+  padding: 0;
+  font-size: 36px;
+  font-weight: 300;
+  color: #1a1a1a;
+}
+.container .info span {
+  color: #4d4d4d;
+  font-size: 12px;
+}
+.container .info span a {
+  color: #000000;
+  text-decoration: none;
+}
+.container .info span .fa {
+  color: #EF3B3A;
+}
+body {
+
+   background-image : url(artificial-flowers-blurred-background-close-up-1229861.jpg);
+   
+  font-family: "Roboto", sans-serif;
+      
+}
+h1 {
+  font-family: 'Courier New', Courier, monospace  ;
+  color: #f2f2f2;
+  align-content: center;
+  float: left;
+  text-align: center;
+  margin-right: 40px;
+}
