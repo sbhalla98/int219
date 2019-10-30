@@ -5,6 +5,7 @@ app.controller("myController",function($scope){
         id:1,
         name:"Sonali Bhalla",
         profession:"Student",
+        img:"sonali.jpeg",
         place:"Ludhiana Pubjab India",
         email:"sonalibhalla98@gmail.com",
         phoneno:"956945786",
@@ -14,7 +15,7 @@ app.controller("myController",function($scope){
             field:"FRONT END DEVELOPER",
             timeStart:"NOV-2019",
             timeEnd:"Current",
-            descrition:"▪	Library Management System (June 2018): The project was to make a library management System. This code was written in Java language and it was linked to My sql. It’s for students and staff to search, issues, return or get to know about book from library. New student can create his/her new member account.",
+            descrition:"Portfolio project using various technlogies html, css ,javascript , bootstrap and angular js where we can visit and see others profile and to see others progress and compare ourselves with others. I  are currently working on it and soon it will get complete.",
         },{
             field:"REACT",
             timeStart:"JUL-2019",
@@ -53,31 +54,36 @@ app.controller("myController",function($scope){
 
             }
         ],
+        linkinstagram:"https://www.instagram.com",
+        linkfacebook:"https://www.facebook.com/sonali.bhalla.94",
+        linksnapchat:"https://www.snapchat.com",
+        linkslinkedin :"https://www.linkedin.com/in/sonalibhalla/",
     },{
     id:2,
-    name:"Sonal Bhalla",
+    name:"Devesh Chaudhary",
     profession:"Student",
+    img:"dev.jpeg",
     place:"Ludhiana Pubjab India",
-    email:"sonalibhalla98@gmail.com",
-    phoneno:"956945786",
-    Skills:["web developer","photography","Java"],
-    Languages:["English","Hindi","Punjabi"],
+    email:"devesh.chaudhary.30994@gmail.com",
+    phoneno:"9729972895",
+    Skills:["web developer","photography"],
+    Languages:["English","Hindi"],
     Projects:[{
         field:"FRONT END DEVELOPER",
         timeStart:"NOV-2019",
         timeEnd:"Current",
-        descrition:"",
+        descrition:"Social networking website for friends.",
     },{
-        field:"REACT",
+        field:"PYTHON",
         timeStart:"JUL-2019",
         timeEnd:"AUG-2019",
-        descrition:"",
+        descrition:"Hangman Game :Hangman is the game built using python and its graphics. It is basically a picture recognizing game in which a random picture of technology came and user get three attempts to recognize it.",
     },
     {
-        field:"JAVA",
+        field:"C++",
         timeStart:"JUN-2018",
         timeEnd:"JUL-2018",
-        descrition:"",
+        descrition:"Sname and Ladder game.",
     }
     ],
     Education:[
@@ -87,44 +93,49 @@ app.controller("myController",function($scope){
             class:"10th",
         },
         {
-            school:"G.M.T Public School",
+            school:"jeevan jyoti public school",
             time:"2016-2017",
             class:"12th",
         },
         {
            
-            school:"G.M.T Public School",
+            school:"jeevan jyoti public schoo",
             time:"2014-2015",
             class:"10th",
 
         }
     ],
+    linkinstagram:"https://www.instagram.com",
+    linkfacebook:"https://www.facebook.com",
+    linksnapchat:"https://www.snapchat.com",
+    linkslinkedin :"ttps://www.linkedin.com/in/devesh-chaudhary-b21154148/",
 },
     {
         id:3,
-        name:"Shareef",
+        name:"Mohd Sharif",
         profession:"Student",
+        img:"sharif.jpg",
         place:"Ludhiana Pubjab India",
-        email:"sonalibhalla98@gmail.com",
-        phoneno:"956945786",
-        Skills:["web developer","photography","Java","photoshop"],
-        Languages:["English","Hindi","Punjabi"],
+        email:"telisharif8@gmail.com",
+        phoneno:"8058320376",
+        Skills:["web developer","photography","photoshop"],
+        Languages:["English","Hindi"],
         Projects:[{
             field:"FRONT END DEVELOPER",
             timeStart:"NOV-2019",
             timeEnd:"Current",
-            descrition:"",
+            descrition:"Basically guiding pateins to know about the hospital and their facilities",
         },{
-            field:"REACT",
+            field:"Kotlin and XML",
             timeStart:"JUL-2019",
             timeEnd:"AUG-2019",
-            descrition:"",
+            descrition:"Echo-Music Player : Local media player on android phone",
         },
         {
-            field:"JAVA",
+            field:"C++",
             timeStart:"JUN-2018",
             timeEnd:"JUL-2018",
-            descrition:"",
+            descrition:"LPU finder : C++ , keeps record of student",
         }
         ],
         Education:[
@@ -134,45 +145,114 @@ app.controller("myController",function($scope){
                 class:"10th",
             },
             {
-                school:"G.M.T Public School",
+                school:"Bhartiya",
                 time:"2016-2017",
                 class:"12th",
             },
             {
                
-                school:"G.M.T Public School",
+                school:"Shri Raghunath School",
                 time:"2014-2015",
                 class:"10th",
 
             }
         ],
+        linkinstagram:"Instagram.com/mohd.shharif",
+        linkfacebook:"https://Facebook.com/mohdsharif",
+        linksnapchat:"https://www.snapchat.com",
+        linkslinkedin :"https://LinkedIn.com/mohdsharifteli",
     },
     {
 
         id:4,
         name:"Yudhvir",
         profession:"Student",
+        img:"yudhvir.jpg",
+        place:"Pune, Maharashtra",
+        email:"yudhviryadav57@gmail.com",
+        phoneno:"7020517078",
+        Skills:["web developer","Ardino","Python","C++"],
+        Languages:["English","Hindi","Marathi"],
+        Projects:[{
+            field:"FRONT END DEVELOPER",
+            timeStart:"NOV-2019",
+            timeEnd:"Current",
+            descrition:"Shopping website",
+        },{
+            field:"IOT",
+            timeStart:"JUL-2019",
+            timeEnd:"AUG-2019",
+            descrition:"Mini robo attack",
+        },
+        {
+            field:"IOT",
+            timeStart:"JUN-2018",
+            timeEnd:"JUL-2018",
+            descrition:"Water level sensor",
+        },
+        {
+            field:"MBC",
+            timeStart:"MAR-2019",
+            timeEnd:"APR-2019",
+            descrition:"Home Automation",
+        }
+        ],
+        Education:[
+            {
+                school:"Lovely Professional University",
+                time:"2017-2021",
+                class:"10th",
+            },
+            {
+                school:"Kendriya Vidyalaya 9BRD no. 3 Pune, Maharashtra",
+                time:"2016-2017",
+                class:"12th",
+            },
+            {
+               
+                school:"Kendriya Vidyalaya 9BRD no. 3 Pune, Maharashtra",
+                time:"2014-2015",
+                class:"10th",
+
+            }
+        ],
+        linkinstagram:"https://www.instagram.com",
+        linkfacebook:"https://www.facebook.com",
+        linksnapchat:"https://www.snapchat.com",
+        linkslinkedin :"http://linkedin.com/in/yudhvier",
+    },
+    {
+        id:5,
+        name:"Sona",
+        profession:"Student",
+        img:"sona.jpg",
         place:"Ludhiana Pubjab India",
         email:"sonalibhalla98@gmail.com",
         phoneno:"956945786",
-        Skills:["web developer","photography","Java","photoshop"],
+        Skills:["web developer","photography","Java"],
         Languages:["English","Hindi","Punjabi"],
         Projects:[{
             field:"FRONT END DEVELOPER",
             timeStart:"NOV-2019",
             timeEnd:"Current",
-            descrition:"",
+            descrition:"Portfolio project using various technlogies html, css ,javascript , bootstrap and angular js where we can visit and see others profile and to see others progress and compare ourselves with others. I  are currently working on it and soon it will get complete.",
         },{
             field:"REACT",
             timeStart:"JUL-2019",
             timeEnd:"AUG-2019",
-            descrition:"",
+            descrition:"Cryptowiki : This is website which is made using React Environment. In this Ajax calls are used to print the information of different cryptocurrency information according to request made by user. The website was designed using Bootstrap and Reactstrap ",
         },
         {
             field:"JAVA",
             timeStart:"JUN-2018",
             timeEnd:"JUL-2018",
-            descrition:"",
+            descrition:"Library Management System : The project was to make a library management System. This code was written in Java language and it was linked to My sql. It’s for students and staff to search, issues, return or get to know about book from library. New student can create his/her new member account.",
+        },
+        {
+            field:"PYTHON",
+            timeStart:"APR-2018",
+            timeEnd:"MAY-2018",
+            descrition:"Hangman Game :Hangman is the game built using python and its graphics. It is basically a picture recognizing game in which a random picture of technology came and user get three attempts to recognize it.",
         }
         ],
         Education:[
@@ -194,7 +274,246 @@ app.controller("myController",function($scope){
 
             }
         ],
+        linkinstagram:"https://www.instagram.com",
+        linkfacebook:"https://www.facebook.com/sonali.bhalla.94",
+        linksnapchat:"https://www.snapchat.com",
+        linkslinkedin :"https://www.linkedin.com/in/sonalibhalla/",
+    },
+    {
+        id:6,
+        name:"Son",
+        profession:"Student",
+        img:"son.jpeg",
+        place:"Ludhiana Pubjab India",
+        email:"sonalibhalla98@gmail.com",
+        phoneno:"956945786",
+        Skills:["web developer","photography","Java"],
+        Languages:["English","Hindi","Punjabi"],
+        Projects:[{
+            field:"FRONT END DEVELOPER",
+            timeStart:"NOV-2019",
+            timeEnd:"Current",
+            descrition:"Portfolio project using various technlogies html, css ,javascript , bootstrap and angular js where we can visit and see others profile and to see others progress and compare ourselves with others. I  are currently working on it and soon it will get complete.",
+        },{
+            field:"REACT",
+            timeStart:"JUL-2019",
+            timeEnd:"AUG-2019",
+            descrition:"Cryptowiki : This is website which is made using React Environment. In this Ajax calls are used to print the information of different cryptocurrency information according to request made by user. The website was designed using Bootstrap and Reactstrap ",
+        },
+        {
+            field:"JAVA",
+            timeStart:"JUN-2018",
+            timeEnd:"JUL-2018",
+            descrition:"Library Management System : The project was to make a library management System. This code was written in Java language and it was linked to My sql. It’s for students and staff to search, issues, return or get to know about book from library. New student can create his/her new member account.",
+        },
+        {
+            field:"PYTHON",
+            timeStart:"APR-2018",
+            timeEnd:"MAY-2018",
+            descrition:"Hangman Game :Hangman is the game built using python and its graphics. It is basically a picture recognizing game in which a random picture of technology came and user get three attempts to recognize it.",
+        }
+        ],
+        Education:[
+            {
+                school:"Lovely Professional University",
+                time:"2017-2021",
+                class:"10th",
+            },
+            {
+                school:"G.M.T Public School",
+                time:"2016-2017",
+                class:"12th",
+            },
+            {
+               
+                school:"G.M.T Public School",
+                time:"2014-2015",
+                class:"10th",
+
+            }
+        ],
+        linkinstagram:"https://www.instagram.com",
+        linkfacebook:"https://www.facebook.com/sonali.bhalla.94",
+        linksnapchat:"https://www.snapchat.com",
+        linkslinkedin :"https://www.linkedin.com/in/sonalibhalla/",
+    },
+    {
+        id:7,
+        name:"Radhika",
+        profession:"Student",
+        img:"sonali.jpeg",
+        place:"Ludhiana Pubjab India",
+        email:"sonalibhalla98@gmail.com",
+        phoneno:"956945786",
+        Skills:["web developer","photography","Java"],
+        Languages:["English","Hindi","Punjabi"],
+        Projects:[{
+            field:"FRONT END DEVELOPER",
+            timeStart:"NOV-2019",
+            timeEnd:"Current",
+            descrition:"Portfolio project using various technlogies html, css ,javascript , bootstrap and angular js where we can visit and see others profile and to see others progress and compare ourselves with others. I  are currently working on it and soon it will get complete.",
+        },{
+            field:"REACT",
+            timeStart:"JUL-2019",
+            timeEnd:"AUG-2019",
+            descrition:"Cryptowiki : This is website which is made using React Environment. In this Ajax calls are used to print the information of different cryptocurrency information according to request made by user. The website was designed using Bootstrap and Reactstrap ",
+        },
+        {
+            field:"JAVA",
+            timeStart:"JUN-2018",
+            timeEnd:"JUL-2018",
+            descrition:"Library Management System : The project was to make a library management System. This code was written in Java language and it was linked to My sql. It’s for students and staff to search, issues, return or get to know about book from library. New student can create his/her new member account.",
+        },
+        {
+            field:"PYTHON",
+            timeStart:"APR-2018",
+            timeEnd:"MAY-2018",
+            descrition:"Hangman Game :Hangman is the game built using python and its graphics. It is basically a picture recognizing game in which a random picture of technology came and user get three attempts to recognize it.",
+        }
+        ],
+        Education:[
+            {
+                school:"Lovely Professional University",
+                time:"2017-2021",
+                class:"10th",
+            },
+            {
+                school:"G.M.T Public School",
+                time:"2016-2017",
+                class:"12th",
+            },
+            {
+               
+                school:"G.M.T Public School",
+                time:"2014-2015",
+                class:"10th",
+
+            }
+        ],
+        linkinstagram:"https://www.instagram.com",
+        linkfacebook:"https://www.facebook.com/sonali.bhalla.94",
+        linksnapchat:"https://www.snapchat.com",
+        linkslinkedin :"https://www.linkedin.com/in/sonalibhalla/",
     }
+    ,
+    {
+        id:8,
+        name:"Bhumika",
+        profession:"Student",
+        img:"bumika.jpg",
+        place:"Ludhiana Pubjab India",
+        email:"sonalibhalla98@gmail.com",
+        phoneno:"956945786",
+        Skills:["web developer","photography","Java"],
+        Languages:["English","Hindi","Punjabi"],
+        Projects:[{
+            field:"FRONT END DEVELOPER",
+            timeStart:"NOV-2019",
+            timeEnd:"Current",
+            descrition:"Portfolio project using various technlogies html, css ,javascript , bootstrap and angular js where we can visit and see others profile and to see others progress and compare ourselves with others. I  are currently working on it and soon it will get complete.",
+        },{
+            field:"REACT",
+            timeStart:"JUL-2019",
+            timeEnd:"AUG-2019",
+            descrition:"Cryptowiki : This is website which is made using React Environment. In this Ajax calls are used to print the information of different cryptocurrency information according to request made by user. The website was designed using Bootstrap and Reactstrap ",
+        },
+        {
+            field:"JAVA",
+            timeStart:"JUN-2018",
+            timeEnd:"JUL-2018",
+            descrition:"Library Management System : The project was to make a library management System. This code was written in Java language and it was linked to My sql. It’s for students and staff to search, issues, return or get to know about book from library. New student can create his/her new member account.",
+        },
+        {
+            field:"PYTHON",
+            timeStart:"APR-2018",
+            timeEnd:"MAY-2018",
+            descrition:"Hangman Game :Hangman is the game built using python and its graphics. It is basically a picture recognizing game in which a random picture of technology came and user get three attempts to recognize it.",
+        }
+        ],
+        Education:[
+            {
+                school:"Lovely Professional University",
+                time:"2017-2021",
+                class:"10th",
+            },
+            {
+                school:"G.M.T Public School",
+                time:"2016-2017",
+                class:"12th",
+            },
+            {
+               
+                school:"G.M.T Public School",
+                time:"2014-2015",
+                class:"10th",
+
+            }
+        ],
+        linkinstagram:"https://www.instagram.com",
+        linkfacebook:"https://www.facebook.com/sonali.bhalla.94",
+        linksnapchat:"https://www.snapchat.com",
+        linkslinkedin :"https://www.linkedin.com/in/sonalibhalla/",
+    }
+    ,
+    {
+        id:9,
+        name:"Bhumi",
+        profession:"Student",
+        img:"sonali.jpeg",
+        place:"Ludhiana Pubjab India",
+        email:"sonalibhalla98@gmail.com",
+        phoneno:"956945786",
+        Skills:["web developer","photography","Java"],
+        Languages:["English","Hindi","Punjabi"],
+        Projects:[{
+            field:"FRONT END DEVELOPER",
+            timeStart:"NOV-2019",
+            timeEnd:"Current",
+            descrition:"Portfolio project using various technlogies html, css ,javascript , bootstrap and angular js where we can visit and see others profile and to see others progress and compare ourselves with others. I  are currently working on it and soon it will get complete.",
+        },{
+            field:"REACT",
+            timeStart:"JUL-2019",
+            timeEnd:"AUG-2019",
+            descrition:"Cryptowiki : This is website which is made using React Environment. In this Ajax calls are used to print the information of different cryptocurrency information according to request made by user. The website was designed using Bootstrap and Reactstrap ",
+        },
+        {
+            field:"JAVA",
+            timeStart:"JUN-2018",
+            timeEnd:"JUL-2018",
+            descrition:"Library Management System : The project was to make a library management System. This code was written in Java language and it was linked to My sql. It’s for students and staff to search, issues, return or get to know about book from library. New student can create his/her new member account.",
+        },
+        {
+            field:"PYTHON",
+            timeStart:"APR-2018",
+            timeEnd:"MAY-2018",
+            descrition:"Hangman Game :Hangman is the game built using python and its graphics. It is basically a picture recognizing game in which a random picture of technology came and user get three attempts to recognize it.",
+        }
+        ],
+        Education:[
+            {
+                school:"Lovely Professional University",
+                time:"2017-2021",
+                class:"10th",
+            },
+            {
+                school:"G.M.T Public School",
+                time:"2016-2017",
+                class:"12th",
+            },
+            {
+               
+                school:"G.M.T Public School",
+                time:"2014-2015",
+                class:"10th",
+
+            }
+        ],
+        linkinstagram:"https://www.instagram.com",
+        linkfacebook:"https://www.facebook.com/sonali.bhalla.94",
+        linksnapchat:"https://www.snapchat.com",
+        linkslinkedin :"https://www.linkedin.com/in/sonalibhalla/",
+    }
+
 
 
 
@@ -204,32 +523,42 @@ app.controller("myController",function($scope){
     $scope.allinfo=[{
         name:"Sonali Bhalla",
         profession:"Student / Web Developer",
+        img:"sonali.jpeg"
     },{
         name:"Yudhvir",
-        profession:"Student / Web Developer", 
+        profession:"Student / Web Developer",
+        img:"yudhvir.jpg" 
     },{
-        name:"Saeef",
+        name:"Mohd Sharif",
         profession:"Student / Web Developer",  
+        img:"sharif.jpg"
     },
     {
-        name:"Sonai",
+        name:"Devesh Chaudhary",
         profession:"Student / Web Developer",
+        img:"dev.jpeg"
     },{
-        name:"Yudhvi",
-        profession:"Student / Web Developer", 
-    },{
-        name:"Shaeef",
-        profession:"Student / Web Developer",  
+        name:"Sona",
+        profession:"Student / Web Developer",
+        img:"sona.jpg" 
     },
     {
-        name:"Sonvi",
+        name:"Son",
         profession:"Student / Web Developer",
-    },{
-        name:"Yudhir",
+        img:"son.jpeg"
+    },
+    {
+        name:"Radhika",
         profession:"Student / Web Developer", 
+        img:"sonali.jpeg" 
     },{
-        name:"Shareef",
+        name:"Bhumika",
+        profession:"Student / Web Developer", 
+        img:"bumika.jpg"
+    },{
+        name:"Bhumi",
         profession:"Student / Web Developer",  
+        img:"sonali.jpeg"
     }]
 
    
@@ -247,9 +576,9 @@ app.controller("myController",function($scope){
         }
     }
 
-    $scope.d=function(target){
-        $(".individualportfolio").toggle();
-        $(".allportfolio").toggle();
+    $scope.d=function(){
+        $(".individualportfolio").show();
+        $(".allportfolio").hide();
        $scope.id="Sonali Bhalla";
     }
 })
