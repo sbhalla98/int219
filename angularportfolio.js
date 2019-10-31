@@ -5,7 +5,7 @@ app.controller("myController",function($scope){
         id:1,
         name:"Sonali Bhalla",
         profession:"Student",
-        img:"sonali.jpeg",
+        img:"./images/sonali.jpeg",
         place:"Ludhiana Pubjab India",
         email:"sonalibhalla98@gmail.com",
         phoneno:"956945786",
@@ -62,7 +62,7 @@ app.controller("myController",function($scope){
     id:2,
     name:"Devesh Chaudhary",
     profession:"Student",
-    img:"dev.jpeg",
+    img:"./images/dev.jpeg",
     place:"Ludhiana Pubjab India",
     email:"devesh.chaudhary.30994@gmail.com",
     phoneno:"9729972895",
@@ -114,7 +114,7 @@ app.controller("myController",function($scope){
         id:3,
         name:"Mohd Sharif",
         profession:"Student",
-        img:"sharif.jpg",
+        img:"./images/sharif.jpg",
         place:"Ludhiana Pubjab India",
         email:"telisharif8@gmail.com",
         phoneno:"8058320376",
@@ -167,7 +167,7 @@ app.controller("myController",function($scope){
         id:4,
         name:"Yudhvir",
         profession:"Student",
-        img:"yudhvir.jpg",
+        img:"./images/yudhvir.jpg",
         place:"Pune, Maharashtra",
         email:"yudhviryadav57@gmail.com",
         phoneno:"7020517078",
@@ -225,7 +225,7 @@ app.controller("myController",function($scope){
         id:5,
         name:"Sona",
         profession:"Student",
-        img:"sona.jpg",
+        img:"./images/sona.jpg",
         place:"Ludhiana Pubjab India",
         email:"sonalibhalla98@gmail.com",
         phoneno:"956945786",
@@ -283,7 +283,7 @@ app.controller("myController",function($scope){
         id:6,
         name:"Son",
         profession:"Student",
-        img:"son.jpeg",
+        img:"./images/son.jpeg",
         place:"Ludhiana Pubjab India",
         email:"sonalibhalla98@gmail.com",
         phoneno:"956945786",
@@ -341,7 +341,7 @@ app.controller("myController",function($scope){
         id:7,
         name:"Radhika",
         profession:"Student",
-        img:"sonali.jpeg",
+        img:"./images/sonali.jpeg",
         place:"Ludhiana Pubjab India",
         email:"sonalibhalla98@gmail.com",
         phoneno:"956945786",
@@ -400,7 +400,7 @@ app.controller("myController",function($scope){
         id:8,
         name:"Bhumika",
         profession:"Student",
-        img:"bumika.jpg",
+        img:"./images/bumika.jpg",
         place:"Ludhiana Pubjab India",
         email:"sonalibhalla98@gmail.com",
         phoneno:"956945786",
@@ -459,7 +459,7 @@ app.controller("myController",function($scope){
         id:9,
         name:"Bhumi",
         profession:"Student",
-        img:"sonali.jpeg",
+        img:"./images/sonali.jpeg",
         place:"Ludhiana Pubjab India",
         email:"sonalibhalla98@gmail.com",
         phoneno:"956945786",
@@ -523,42 +523,42 @@ app.controller("myController",function($scope){
     $scope.allinfo=[{
         name:"Sonali Bhalla",
         profession:"Student / Web Developer",
-        img:"sonali.jpeg"
+        img:"./images/sonali.jpeg"
     },{
         name:"Yudhvir",
         profession:"Student / Web Developer",
-        img:"yudhvir.jpg" 
+        img:"./images/yudhvir.jpg" 
     },{
         name:"Mohd Sharif",
         profession:"Student / Web Developer",  
-        img:"sharif.jpg"
+        img:"./images/sharif.jpg"
     },
     {
         name:"Devesh Chaudhary",
         profession:"Student / Web Developer",
-        img:"dev.jpeg"
+        img:"./images/dev.jpeg"
     },{
         name:"Sona",
         profession:"Student / Web Developer",
-        img:"sona.jpg" 
+        img:"./images/sona.jpg" 
     },
     {
         name:"Son",
         profession:"Student / Web Developer",
-        img:"son.jpeg"
+        img:"./images/son.jpeg"
     },
     {
         name:"Radhika",
         profession:"Student / Web Developer", 
-        img:"sonali.jpeg" 
+        img:"./images/sonali.jpeg" 
     },{
         name:"Bhumika",
         profession:"Student / Web Developer", 
-        img:"bumika.jpg"
+        img:"./images/bumika.jpg"
     },{
         name:"Bhumi",
         profession:"Student / Web Developer",  
-        img:"sonali.jpeg"
+        img:"./images/sonali.jpeg"
     }]
 
    
