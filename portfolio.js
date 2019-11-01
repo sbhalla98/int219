@@ -28,3 +28,33 @@ function moveToAbout(){
 function moveToBlog(){
     $('html,body').animate({scrollTop:($('#Blog').offset().top)},500);
 }
+function check(name,email,message){
+
+   
+    if(name.value.trim()==""){
+      alert('write your name');
+        return  false;
+    }
+    if (name.value.search(/[1-10]/) > 0) {
+        alert("enter your valid name"); 
+        return false;
+    }
+   
+    if(email.value.trim()==""){
+        alert('write your email');
+        return  false;
+    }
+    var emailReg = /^([\w-\.]+@([\w-]+\.)+[\w-]{2,4})?$/;
+    if(!(emailReg.test(email.value))){
+      alert('enter a valid email');
+      $('#email').focus();
+      return false;
+    }
+if(message.value.trim()==""){
+    alert('Message cant be blank');
+    return  false;
+}
+document.getElementById('form').reset();
+return true;
+
+}

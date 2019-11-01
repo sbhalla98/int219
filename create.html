@@ -10,7 +10,14 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 <link rel="stylesheet" href="portfolio.css" type="text/css">
+<script type="text/javascript" src="city_state.js"></script>
     </head>
+
+
+
+
+
+    
     <body>
             <header class="header">
                     <div class="heading">
@@ -25,60 +32,84 @@
                     </div>
                 </header>
                 <div style="margin-top:100px ;" class="container">
+   
+                    <script>  
+                        function validateform(){  
+                        var name=document.myform.name.value;  
+                        var password=document.myform.password.value;  
+                        var x=document.myform.email.value;  
+                        var atposition=x.indexOf("@");  
+                        var dotposition=x.lastIndexOf(".");  
+                          
+                        if (name==null || name==""){  
+                          alert("Name can't be blank");  
+                          return false;  
+                        }else if(password.length<6){  
+                          alert("Password must be at least 6 characters long.");  
+                          return false;  
+                          }  
+                        
+                        if (atposition<1 || dotposition<atposition+2 || dotposition+2>=x.length){  
+                              alert("Please enter a valid e-mail address \n atpostion:"+atposition+"\n dotposition:"+dotposition);  
+                              return false;  
+                              }  
+                        
+                        
+                        
+                        }  
+                        </script>  
+                        <body>  
+                        <form name="myform" method="post" action="http://www.javatpoint.com/javascriptpages/valid.jsp" onsubmit="return validateform()" >  
+                        Name: <input type="text" class="form-control" id="profession" name="name" placeholder="Name"><br/>  
+                        Password: <input type="password" class="form-control" id="profession" name="password" placeholder="Password"><br/> 
+                        Email: <input type="text" class="form-control" id="profession" name="email" placeholder="Mail"><br/>  
+                        <input type="submit" class="btn btn-secondary" value="check me">  
+                        </form>  
+                        </body>
 
 
-        <form>
+        <form >
             <div class="form-row">
-                <div class="col">
-                    <label for="Name">Name</label>
-                    <input type="email" class="form-control" id="name" placeholder="Your name">
-                </div>
+                
                 <div class="col">
                     <label for="profession">Profession</label>
                   <input type="text" class="form-control" id="profession" placeholder="Profession">
                 </div>
+                <div class="col">
+                  <label for="skills">Skills</label>
+                <input type="text" class="form-control" id="profession" placeholder="HTML, CSS, PYTHON, etc">
+              </div>
+              <div class="col">
+                <label for="Projects">Projects</label>
+              <input type="text" class="form-control" id="profession" placeholder="Portfolio creater, etc">
+            </div>
               </div>
               <br/>
           <div class="form-row">
-            <div class="form-group col-md-6">
-              <label for="inputEmail4">Email</label>
-              <input type="email" class="form-control" id="inputEmail4" placeholder="Email">
-            </div>
-            <div class="form-group col-md-6">
-              <label for="inputPassword4">Password</label>
-              <input type="password" class="form-control" id="inputPassword4" placeholder="Password">
-            </div>
+              
+            
           </div>
           <div class="form-group">
               <label for="mobile">Mobile No</label>
               <input type="text" class="form-control" id="mobile" placeholder="Enter your contact">
             </div>
-          <div class="form-group">
-            <label for="inputAddress">Address</label>
-            <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
-          </div>
-          <div class="form-row">
-            <div class="form-group col-md-6">
-              <label for="inputCity">City</label>
-              <input type="text" class="form-control" id="inputCity">
-            </div>
-            <div class="form-group col-md-4">
-              <label for="inputState">State</label>
-              <select id="inputState" class="form-control">
-                <option selected>Choose...</option>
-                <option>...</option>
+
+
+
+            <div class="form-group">
+              <form>
+              Region&raquo; <select class="form-control" onchange="set_country(this,country,city_state)" size="1" name="region">
+              <option value="" selected="selected">SELECT REGION</option>
+              <option value=""></option>
+              <script type="text/javascript">
+              setRegions(this);
+              </script>
               </select>
-            </div>
-          </div>
-          <div class="form-group">
-            <div class="form-check">
-              <input class="form-check-input" type="checkbox" id="gridCheck">
-              <label class="form-check-label" for="gridCheck">
-                Check me out
-              </label>
-            </div>
-          </div>
-          <button type="submit" class="btn btn-primary">Sign in</button>
+              Country&raquo; <select class="form-control" name="country" size="1" disabled="disabled" onchange="set_city_state(this,city_state)"></select>
+              City/State&raquo; <select class="form-control" name="city_state" size="1" disabled="disabled" onchange="print_city_state(country,this)"></select>
+              </form>
+              </div>
+          <button type="submit" class="btn btn-primary" onclick="alert('are you sure to submit?')">Sign in</button>
         </form>
         </div>
         </div>
@@ -113,9 +144,9 @@
                       <p>
                         <i class="fas fa-home mr-3"></i> Lovely professional university,punjab India</p>
                       <p>
-                        <i class="fas fa-envelope mr-3"></i>sonalibhalla98@gmail.com</p>
+                        <i class="fas fa-envelope mr-3"></i>yudhviryadav57@gmail.com</p>
                       <p>
-                        <i class="fas fa-phone mr-3"></i> 9569545786</p>
+                        <i class="fas fa-phone mr-3"></i> 7020517078</p>
                     </div>
                   </div>
             

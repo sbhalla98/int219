@@ -65,7 +65,7 @@ html,body,h1,h4,h6 {font-family: "Roboto", sans-serif; font-size: 15px;}
    
       <div ng-repeat="i in allinfo">
         <div class="w3-third w3-container w3-margin-bottom card" ng-click="display($event)" id="{{i.name}}">
-          <img src={{i.img}} alt="Norway" style="width:100%">
+          <img src={{i.img}} alt="Norway" style="width:100%;height:100%;">
           <div class="w3-container w3-white">
             <h5 class="w3-center"><b>{{i.name}}</b></h5>
             <h4 class="w3-center">{{i.profession}}</h4>
@@ -205,22 +205,37 @@ html,body,h1,h4,h6 {font-family: "Roboto", sans-serif; font-size: 15px;}
          var place=name.value;
         if(name.value.trim()==""){
           alert('write your name');
+          $('#name').focus();
             return  false;
         }
-      if(subject.value.trim()==""){
-        var r = confirm("Are you sure you want to submit without subject!");
-        if (r == true) {
-        } else {
-          return false;
-        }
-    }
+        if (name.value.search(/[1-10]/) > 0) {
+        alert("enter your valid name"); 
+        return false;
+      }
+   
     if(email.value.trim()==""){
         alert('Email Required');
+        $('#email').focus();
         return  false;
+    }
+    var emailReg = /^([\w-\.]+@([\w-]+\.)+[\w-]{2,4})?$/;
+    if(!(emailReg.test(email.value))){
+      alert('enter a valid email');
+      $('#email').focus();
+      return false;
     }
     if(message.value.trim()==""){
         alert('message Required');
+        $('#message').focus();
         return  false;
+    }
+    if(subject.value.trim()==""){
+        var r = confirm("Are you sure you want to submit without subject!");
+        if (r == true) {
+        } else {
+          $('#subject').focus();
+          return false;
+        }
     }
     document.getElementById('form').reset();
     return true;

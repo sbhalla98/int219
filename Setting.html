@@ -309,7 +309,15 @@
                                               function number()
                                               {
                                               var a=prompt("Enter your 10 digit Phone Number");
-                                              confirm("Click Ok to confirm your phone number: "+a);
+                                              if(a==""){
+                                                document.getElementById("phone").checked = false; 
+                                                return false;
+                                              }
+                                              var conval=confirm("Click Ok to confirm your phone number: "+a);
+                                              if(conval==false){
+                                                document.getElementById("phone").checked = false; 
+                                                return false;
+                                              }
                                               if(isNaN(a) || a.length > 10 || a.length < 10)
                                               {
                                               alert("Please check the number.");
@@ -320,12 +328,20 @@
                                               }
                                               }
                                               </script>
-                                              <p style="font-size: 15px;">Through Phone Number <input type="radio" value="number" onclick="number()"></p>
+                                              <p style="font-size: 15px;">Through Phone Number <input type="radio" value="number" id="phone" name="setting" onclick="number()"></p>
                                               <script>
                                                 function mail()
                                               {
                                               var a=prompt("Enter your E-Mail ID");
-                                              confirm("Click Ok to confirm your ID: "+a);
+                                              if(a==""){
+                                                document.getElementById("mail").checked = false; 
+                                                return false;
+                                              }
+                                              var conval=confirm("Click Ok to confirm your phone number: "+a);
+                                              if(conval==false){
+                                                document.getElementById("mail").checked = false; 
+                                                return false;
+                                              }
                                               var atPos= parseInt(a.indexOf('@'));
                                               var dotPos = parseInt(a.lastIndexOf('.'));
                                               if( atPos<1 || (dotPos-atPos)<2)
@@ -337,8 +353,14 @@
                                               alert("Your notifications setting have changed to E-mail ID");
                                               }
                                             }
+
+                                            function uncheck() { 
+                                              console.log("jk");
+                                                    document.getElementById( 
+                                                              "phone").checked = false; 
+                                                      } 
                                               </script>
-                                              <p style="font-size: 15px;">Through E-Mail ID <input type="radio" value="e-mail" onclick="mail()"></p>
+                                              <p style="font-size: 15px;">Through E-Mail ID <input type="radio" value="e-mail" id="mail" name="setting" onclick="mail()"></p>
                                             <script>
                                              function sub4(){
                                                 alert("Notification setting changed successfully!!!");

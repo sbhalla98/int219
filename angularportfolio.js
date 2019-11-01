@@ -39,7 +39,7 @@ app.controller("myController",function($scope){
             {
                 school:"Lovely Professional University",
                 time:"2017-2021",
-                class:"10th",
+                class:"B.Tech (CSE)",
             },
             {
                 school:"G.M.T Public School",
@@ -90,7 +90,7 @@ app.controller("myController",function($scope){
         {
             school:"Lovely Professional University",
             time:"2017-2021",
-            class:"10th",
+            class:"B.Tech (CSE)",
         },
         {
             school:"jeevan jyoti public school",
@@ -142,7 +142,7 @@ app.controller("myController",function($scope){
             {
                 school:"Lovely Professional University",
                 time:"2017-2021",
-                class:"10th",
+                class:"B.Tech (CSE)",
             },
             {
                 school:"Bhartiya",
@@ -201,7 +201,7 @@ app.controller("myController",function($scope){
             {
                 school:"Lovely Professional University",
                 time:"2017-2021",
-                class:"10th",
+                class:"B.Tech (CSE)",
             },
             {
                 school:"Kendriya Vidyalaya 9BRD no. 3 Pune, Maharashtra",
@@ -259,7 +259,7 @@ app.controller("myController",function($scope){
             {
                 school:"Lovely Professional University",
                 time:"2017-2021",
-                class:"10th",
+                class:"B.Tech (CSE)",
             },
             {
                 school:"G.M.T Public School",
@@ -317,7 +317,7 @@ app.controller("myController",function($scope){
             {
                 school:"Lovely Professional University",
                 time:"2017-2021",
-                class:"10th",
+                class:"B.Tech (CSE)",
             },
             {
                 school:"G.M.T Public School",
@@ -375,7 +375,7 @@ app.controller("myController",function($scope){
             {
                 school:"Lovely Professional University",
                 time:"2017-2021",
-                class:"10th",
+                class:"B.Tech (CSE)",
             },
             {
                 school:"G.M.T Public School",
@@ -434,7 +434,7 @@ app.controller("myController",function($scope){
             {
                 school:"Lovely Professional University",
                 time:"2017-2021",
-                class:"10th",
+                class:"B.Tech (CSE)",
             },
             {
                 school:"G.M.T Public School",
@@ -493,7 +493,7 @@ app.controller("myController",function($scope){
             {
                 school:"Lovely Professional University",
                 time:"2017-2021",
-                class:"10th",
+                class:"B.Tech (CSE)",
             },
             {
                 school:"G.M.T Public School",
